@@ -12,14 +12,14 @@ string displayMenu(){
     return choice;
 }
 
-//A function is typically created to segragate a block of code that is reused across the application. 
+//A function is typically created to segregate a block of code that is reused across the application.
 int takeInputFromUser(){
-    //declare a variable to tell that the input shall be stored here. 
+    //declare a variable to tell that the input shall be stored here.
     int num1;
     cout<<"Enter the number to calculate:"<<endl;
     cin >> num1;
-    return num1;//return this value to the main function.     
-    //NOTE: Modren C++ allows to create a variable without declaring it, It is called as auto variables. 
+    return num1;//return this value to the main function.
+    //NOTE: Modern C++ allows to create a variable without declaring it, It is called as auto variables.
 }
 
 int performCalc(int num1, int num2, string choice){
@@ -41,7 +41,7 @@ int performCalc(int num1, int num2, string choice){
   }
   return result;
 }
-//This is the place where UR program starts and terminates. 
+//This is the place where UR program starts and terminates.
 int main(){
     string choice = displayMenu();
     int num1 = takeInputFromUser();
